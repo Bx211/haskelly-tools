@@ -1,0 +1,20 @@
+name: haskelly-tools
+version: 0.1.0
+license: MIT
+extra-source-files:
+- README.md
+
+
+library:
+source-dirs: src
+exposed-modules:
+- Haskelly
+
+
+tests:
+spec:
+main: Spec.hs
+source-dirs: test
+dependencies:
+- haskelly-tools
+- base
